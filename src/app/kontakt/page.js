@@ -1,0 +1,25 @@
+import React from 'react';
+import Navbar from "../../components/navbar";
+
+export default function Kontakt() {
+  return (
+    <div className="min-h-screen p-8 sm:p-20 flex flex-col items-center justify-center">
+      <Navbar />
+      <div className="mt-20 text-center">
+        <h1 className="text-4xl font-bold mb-8">Kontakt</h1>
+        <p className="text-lg mb-4">
+          Email: <a href="mailto:trener@sar-dance.cz" className="text-blue-500">trener@sar-dance.cz</a>
+        </p>
+        <p className="text-lg">
+          Telefon - Šárka Moravová: <a href="tel:+420604911657" className="text-blue-500">+420 604 911 657</a>
+        </p>
+        <p className="text-lg mb-8">
+          Telefon - Richard Gardlo: <a href="tel:+420777122459" className="text-blue-500">+420 777 122 459</a>
+        </p>
+        <p className="text-lg mb-8">
+          IČO: 08234621
+        </p>  
+      </div>
+    </div>
+  );
+}
