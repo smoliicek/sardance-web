@@ -24,7 +24,7 @@ export default function Home() {
       <div className="p-8 pb-20 sm:p-20 flex flex-col lg:flex-row">
         <div className="lg:w-1/2 flex flex-col items-center justify-center">
           <p className="text-center">
-            Co znamená ŠaR Dance [čtěte dohromady, skoro jako Star Dance]? Šárka a Richard - jsme dva tanečníci a trenéři s láskou k tanci.<br></br>Společně spolu už ve svém klubu trénujeme latinskoamerické (Samba, Cha-cha, Rumba, Paso-doble, Jive) a standartní (Waltz, Valčík, Tango, Slowfox, Quickstep) tance už 6 let, a to děti a mládežníky od 6 do 18 let.<br></br>Zaujiali jsme tě?
+            Co znamená ŠaR Dance [čtěte dohromady, skoro jako Star Dance]? Šárka a Richard - jsme dva tanečníci a trenéři s láskou k tanci.<br></br>Společně spolu ve svém klubu trénujeme latinskoamerické (Samba, Cha-cha, Rumba, Paso-doble, Jive) a standartní (Waltz, Valčík, Tango, Slowfox, Quickstep) tance už 6 let, a to děti a mládežníky od 6 do 21 let.<br></br>Zaujiali jsme tě?
           </p>
           <Link legacyBehavior href="/nabidka">
           <a className="mt-4 mb-4 text-black bg-gray-200 rounded-full px-4 py-2 hover:bg-gray-300 hover:shadow-lg hover:shadow-[#cb3298]/50 transition duration-300">Co nabízíme?</a>
