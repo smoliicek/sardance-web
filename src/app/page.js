@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 export default function Home() {
   return (
@@ -33,6 +34,8 @@ export default function Home() {
           <Image src="/treneri.png" alt="Image 1" width={300} height={300} loading="lazy" />
         </div>
       </div>
+      <Footer />
     </div>
+    
   );
 }

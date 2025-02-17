@@ -2,11 +2,13 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from "../../components/navbar";
+import Footer from '@/components/footer';
 
 export default function Nabidka() {
   return (
-    <div className="min-h-screen p-8 sm:p-20 flex flex-col items-center">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
+      <div className="min-h-screen p-8 sm:p-20 flex flex-col items-center">
       <div className="mt-20 text-center">
         <h1 className="text-4xl font-bold mb-8">Co nabízíme?</h1>
       </div>
@@ -39,6 +41,8 @@ export default function Nabidka() {
           <Image src="/vystoupeni.jpg" alt="Image 1" width={300} height={300} loading='lazy'/>
         </div>
       </div>
+      </div>
+      <Footer />
     </div>
   );
 }
