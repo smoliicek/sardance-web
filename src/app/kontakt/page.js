@@ -19,6 +19,9 @@ export default function Kontakt() {
         <p className="text-lg mb-8">
           IČO: 08234621
         </p>  
+        <p className="text-lg mb-8">
+          Stížnosti ohledně webových stránek a jejich obsahu zasílejte na email: <a href="mailto:manager@smoliicek.cz" className="text-blue-500">manager@smoliicek.cz</a>
+        </p>
       </div>
     </div>
   );

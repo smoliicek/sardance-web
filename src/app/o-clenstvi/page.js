@@ -26,11 +26,11 @@ export default function Oclenstvi() {
 
           <p className="mb-5">Pokud jsme tě přesvědčili, vezmi se sebou i přihlášku a podepsaný řád klubu, ten i s dalšími instrukcemi najdeš tady:</p>
           <Link legacyBehavior href="/prihlaska">
-          <a className="mt-4 text-black bg-gray-200 rounded-full px-4 py-2 hover:bg-gray-300 hover:shadow-lg hover:shadow-[#cb3298]/50 transition duration-300">Přihláška</a>
+          <a className="mt-2 mb-8 text-black bg-gray-200 rounded-full px-4 py-2 hover:bg-gray-300 hover:shadow-lg hover:shadow-[#cb3298]/50 transition duration-300">Přihláška</a>
           </Link>
           </div>
         </div>
-        <div className="lg:w-1/2 flex items-center justify-center">
+        <div className="lg:w-1/2 flex items-center justify-center mt-8">
           <iframe
             width="500"
             height="500S"
