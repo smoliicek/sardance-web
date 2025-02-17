@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-full max-w-6xl fixed top-4 left-1/2 transform -translate-x-1/2 flex flex-col lg:flex-row items-center justify-between p-4 bg-white bg-opacity-90 rounded-lg shadow-lg z-50">
-      <div className="flex items-center ml-4">
+      <div className="flex items-center justify-center w-full lg:w-auto">
         <Link href="/" legacyBehavior>
           <a>
             <Image src="/sar_dance.png" alt="Logo" width={75} height={75} priority="true" />
@@ -27,7 +27,7 @@ export default function Navbar() {
           </svg>
         </button>
       </div>
-      <ul className={`lg:flex space-x-4 mr-4 ${isOpen ? 'block' : 'hidden'} lg:block mt-4 lg:mt-0`}>
+      <ul className={`lg:flex space-x-4 mr-4 ${isOpen ? 'grid grid-cols-2 gap-4' : 'hidden'} lg:block mt-4 lg:mt-0`}>
         <li>
           <Link legacyBehavior href="/nabidka">
             <a className="text-black bg-gray-200 rounded-full px-4 py-2 mb-4 lg:mb-0 hover:bg-gray-300 hover:shadow-lg hover:shadow-[#cb3298]/50 transition duration-300">Co nabízíme?</a>
