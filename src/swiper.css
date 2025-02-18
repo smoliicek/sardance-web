@@ -11,7 +11,7 @@
     background: #eee;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
-    color: #000;
+    /* color: #000; */
     margin: 0;
     padding: 0;
   }
@@ -40,8 +40,8 @@
   }
   
   body {
-    background: #000;
-    color: #000;
+    background: #0a0a0a;
+    color: #ededed;
   }
   
   .swiper {
