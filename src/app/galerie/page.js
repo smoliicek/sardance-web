@@ -4,7 +4,7 @@ import Footer from '../../components/footer';
 
 export default function Kontakt() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col background-color=[#0a0a0a]">
       <Navbar />
       <div className="flex-grow p-8 sm:p-20 flex flex-col items-center justify-center">
         <div className="mt-20 text-center">

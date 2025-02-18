@@ -21,7 +21,8 @@ export default function Gallerie() {
   return (
     <>
       <button
-        onClick={() => router.push('/galerie') && router.refresh()}
+      // ano, predpokladam ze prisel z galerie, jinak se povesim
+        onClick={() => router.back()}
         className="back-button text-black bg-gray-200 rounded-full px-4 py-2 mb-4 lg:mb-0 hover:bg-gray-300 hover:shadow-lg hover:shadow-[#cb3298]/50 transition duration-300"
       >
         Zpět
