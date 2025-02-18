@@ -1,93 +1,74 @@
 'use client'
 
-import React, { useState } from 'react';
-import Image from 'next/image';
+import React, { useRef, useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-const photos = [
-    { src: '/skupina-1.jpg', alt: 'Photo 1' },
-    { src: '/sar_dance.png', alt: 'Photo 2' },
-    { src: '/treneri.png', alt: 'Photo 3' },
-];
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
 
-const Gallery = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const [currentPhoto, setCurrentPhoto] = useState(null);
+import '@/swiper.css';
 
-    const openLightbox = (photo) => {
-        setCurrentPhoto(photo);
-        setIsOpen(true);
-    };
+import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 
-    const closeLightbox = () => {
-        setIsOpen(false);
-        setCurrentPhoto(null);
-    };
+export default function Gallerie() {
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const router = useRouter();
 
-    return (
-        <div>
-            <h1>Photo Gallery</h1>
-            <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-                {photos.map((photo, index) => (
-                    <div key={index} style={{ margin: '10px', cursor: 'pointer' }} onClick={() => openLightbox(photo)}>
-                        <Image src={photo.src} alt={photo.alt} width={300} height={200} className="thumbnail" />
-                    </div>
-                ))}
-            </div>
-
-            {isOpen && (
-                <div style={lightboxStyles.overlay} onClick={closeLightbox}>
-                    <div style={lightboxStyles.content} onClick={(e) => e.stopPropagation()}>
-                        <Image src={currentPhoto.src} alt={currentPhoto.alt} width={800} height={600} style={lightboxStyles.image} />
-                        <button style={lightboxStyles.closeButton} onClick={closeLightbox}>X</button>
-                    </div>
-                </div>
-            )}
-        </div>
-    );
-};
-
-const imageStyles = {
-    thumbnail: {
-        transition: 'transform 0.3s ease-in-out',
-    },
-    thumbnailHover: {
-        transform: 'scale(1.1)',
-    },
-};
-
-const lightboxStyles = {
-    overlay: {
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        backgroundColor: 'rgba(0, 0, 0, 0.8)',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        zIndex: 1000,
-    },
-    content: {
-        position: 'relative',
-        backgroundColor: '#fff',
-        padding: '20px',
-        borderRadius: '8px',
-    },
-    image: {
-        transform: 'scale(1.1)',
-        transition: 'transform 0.3s ease-in-out',
-    },
-    closeButton: {
-        position: 'absolute',
-        top: '10px',
-        right: '10px',
-        backgroundColor: 'transparent',
-        color: '#fff',
-        border: 'none',
-        fontSize: '24px',
-        cursor: 'pointer',
-    },
-};
-
-export default Gallery;
+  return (
+    <>
+      <button
+        onClick={() => router.push('/galerie') && router.refresh()}
+        className="back-button text-black bg-gray-200 rounded-full px-4 py-2 mb-4 lg:mb-0 hover:bg-gray-300 hover:shadow-lg hover:shadow-[#cb3298]/50 transition duration-300"
+      >
+        Zpět
+      </button>
+      <Swiper
+        style={{
+          '--swiper-navigation-color': '#fff',
+          '--swiper-pagination-color': '#fff',
+        }}
+        spaceBetween={10}
+        navigation={true}
+        thumbs={{ swiper: thumbsSwiper }}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper2"
+      >
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        </SwiperSlide>
+      </Swiper>
+      <Swiper
+        onSwiper={setThumbsSwiper}
+        spaceBetween={10}
+        slidesPerView={4}
+        freeMode={true}
+        watchSlidesProgress={true}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        </SwiperSlide>
+      </Swiper>
+      <style jsx>{`
+        .back-button {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          z-index: 1000;
+          text-decoration: none;
+        }
+      `}</style>
+    </>
+  );
+}
