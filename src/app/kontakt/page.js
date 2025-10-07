@@ -10,7 +10,7 @@ export default function Kontakt() {
         <div className="mt-20 text-center">
           <h1 className="text-4xl font-bold mb-8">Kontakt</h1>
           <p className="text-lg mb-4">
-            Email: <a href="mailto:trener@sar-dance.cz" className="text-blue-500">trener@sar-dance.cz</a>
+            Email: <a href="mailto:trener@sardance.cz" className="text-blue-500">trener@sardance.cz</a>
           </p>
           <p className="text-lg">
             Telefon - Šárka Moravová: <a href="tel:+420604911657" className="text-blue-500">+420 604 911 657</a>

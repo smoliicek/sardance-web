@@ -6,7 +6,7 @@ export default function Prihlaska() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <div className="flex-grow p-8 sm:p-20 flex flex-col items-center">
+      <div className="flex-grow p-8 sm:p-20 flex flex-col items-center justify-center">
         <div className="mt-20 text-center">
           <h1 className="text-4xl font-bold mb-8">Přihláška</h1>
           <p className="text-lg mb-8">
@@ -24,9 +24,9 @@ export default function Prihlaska() {
 
         <div className="mt-10 text-center">
           <h1 className="text-2xl font-bold mb-4">Odevzdání přihlášky</h1>
-          <p>Přihlášku buď vytiskni a přines ji na trénink, nebo ji naskenovanou pošli na email trener@sar-dance.cz</p>
+          <p>Přihlášku buď vytiskni a přines ji na trénink, nebo ji naskenovanou pošli na email <a href="mailto:trener@sardance.cz" className="text-blue-500">trener@sardance.cz</a></p>
           <h1 className="text-2xl font-bold mt-5 mb-4">Platba školného</h1>
-          <p>Školné pro 1. pololetí je nutno uhradit do 21.9.2024, na 2. pololetí do 31.1.2025</p>
+          <p>Školné pro 1. pololetí je nutno uhradit do 21.9.202, na 2. pololetí do 31.1.2026</p>
           <p>Školné v částce 3500Kč se platí na bankovní účet 123-232630247/0100 vedený u KB</p>
           <p>Do poznámky uveďte jméno a přijímení člena, do variabilního symbolu uveďte datum narození ve formátu DDMMRRRR (např. 03.06.2010 -{'>'} 03062010)</p>
         </div>

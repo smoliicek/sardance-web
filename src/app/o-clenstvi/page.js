@@ -7,7 +7,7 @@ export default function Oclenstvi() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <div className="flex-grow p-8 sm:p-20 flex flex-col items-center">
+      <div className="flex-grow p-8 sm:p-20 flex flex-col items-center justify-center">
         <div className="mt-20 w-full text-center">
           <h1 className="text-4xl font-bold mb-8">O členství</h1>
         </div>
@@ -35,10 +35,6 @@ export default function Oclenstvi() {
             <iframe
               width="500"
               height="500S"
-              frameBorder="0"
-              scrolling="no"
-              marginHeight="0"
-              marginWidth="0"
               src="https://www.openstreetmap.org/export/embed.html?bbox=15.590898%2C49.397804%2C15.592898%2C49.398804&amp;layer=mapnik&amp;marker=49.398304%2C15.591898"
               style={{ border: 0 }}
               allowFullScreen
