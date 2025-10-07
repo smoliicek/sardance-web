@@ -23,7 +23,7 @@ export default function Nabidka() {
             Chceš se naučit tančit? Viděl si Star Dance a chtěl by ses naučit něco podobného?<br></br>Nebo jsi už tanečník a chceš se zlepšit? Přijď k nám do klubu, kde trénujeme latinskoamerické (Samba, Cha-cha, Rumba, Paso-doble, Jive) a standartní (Waltz, Valčík, Tango, Slowfox, Quickstep) tance.<br></br>Trénujeme děti a mládežníky od 6 do 21 let.<br></br> Zaujali jsme tě? Klikni a dozvíš se víc:
           </p>
           <Link legacyBehavior href="/o-clenstvi">
-          <a className="mt-4 text-black bg-gray-200 rounded-full px-4 py-2 hover:bg-gray-300 hover:shadow-lg hover:shadow-[#cb3298]/50 transition duration-300">O Členství</a>
+          <a className="mt-4 text-black bg-gray-200 rounded-full px-4 py-2 hover:bg-gray-300 hover:shadow-lg hover:shadow-[#cb3298]/50 transition duration-300">O členství</a>
           </Link>
         </div>
       </div>

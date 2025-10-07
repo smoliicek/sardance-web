@@ -44,6 +44,11 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
+          <Link legacyBehavior href="/fotky">
+            <a className="text-black bg-gray-200 rounded-full px-4 py-2 mb-4 lg:mb-0 hover:bg-gray-300 hover:shadow-lg hover:shadow-[#cb3298]/50 transition duration-300">Fotogalerie</a>
+          </Link>
+        </li>
+        <li>
           <Link legacyBehavior href="/kontakt">
             <a className="text-black bg-gray-200 rounded-full px-4 py-2 mb-4 lg:mb-0 hover:bg-gray-300 hover:shadow-lg hover:shadow-[#cb3298]/50 transition duration-300">Kontakt</a>
           </Link>
