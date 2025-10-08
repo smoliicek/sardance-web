@@ -18,7 +18,7 @@ export default function Home() {
           loading="lazy"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-            <Image src="/sar_dance.png" alt="Logo" width={500} height={500} priority="true" />
+            <Image src="/sar_dance.png" alt="Logo" width={600} height={600} priority="true" />
         </div>
       </div>
       <div className="p-8 pb-20 sm:p-20 flex flex-col lg:flex-row">
