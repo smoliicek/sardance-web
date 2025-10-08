@@ -32,13 +32,15 @@ export default function Oclenstvi() {
             </div>
           </div>
           <div className="lg:w-1/2 flex items-center justify-center mt-8">
-            <iframe
-              width="500"
-              height="500S"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=15.590898%2C49.397804%2C15.592898%2C49.398804&amp;layer=mapnik&amp;marker=49.398304%2C15.591898"
-              style={{ border: 0 }}
-              allowFullScreen
-            ></iframe>
+            <div className="w-full max-w-[500px] h-64 sm:h-80 md:h-96 lg:h-[500px]">
+              <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=15.590898%2C49.397804%2C15.592898%2C49.398804&amp;layer=mapnik&amp;marker=49.398304%2C15.591898"
+                className="w-full h-full"
+                style={{ border: 0 }}
+                allowFullScreen
+                title="Mapa - Grafická škola Jihlava"
+              />
+            </div>
           </div>
         </div>
       </div>
