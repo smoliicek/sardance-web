@@ -13,10 +13,10 @@ export default function Kontakt() {
             Email: <a href="mailto:trener@sardance.cz" className="text-blue-500">trener@sardance.cz</a>
           </p>
           <p className="text-lg">
-            Telefon - Šárka Moravová: <a href="tel:+420604911657" className="text-blue-500">+420 604 911 657</a>
+          Šárka Moravová: <a href="tel:+420604911657" className="text-blue-500">+420 604 911 657</a>, <a href='mailto:sarka@sardance.cz' className="text-blue-500">sarka@sardance.cz</a>
           </p>
           <p className="text-lg mb-8">
-            Telefon - Richard Gardlo: <a href="tel:+420777122459" className="text-blue-500">+420 777 122 459</a>
+          Richard Gardlo: <a href="tel:+420777122459" className="text-blue-500">+420 777 122 459</a>, <a href='mailto:richard@sardance.cz' className="text-blue-500">richard@sardance.cz</a>
           </p>
           <p className="text-lg mb-8">
             IČO: 08234621
